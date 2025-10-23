@@ -1,0 +1,18 @@
+# docker-compose.yml
+
+services:
+  superset:
+    build: .
+    container_name: my_superset_app
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    volumes:
+      - superset-data:/app/superset_home
+    environment:
+      # Явно передаем секретный ключ, чтобы избежать ошибки при запуске
+      SUPERSET_SECRET_KEY: ${SUPERSET_SECRET_KEY}
+
+volumes:
+  superset-data:
+    driver: local
