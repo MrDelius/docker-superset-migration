@@ -63,7 +63,7 @@ docker cp my_superset_app:/app/superset_home/superset.db ./backup_sqlite.db
 # Замените значение на ваш собственный ключ
 # Команда для генерации в PowerShell:
 # (New-Guid).ToString() + (New-Guid).ToString()
-SUPERSET_SECRET_KEY=a1b2c3d4-e5f6-7890-abcd-ef1234567890f1e2d3c4-b5a6-7890-abcd-ef1234567890
+SUPERSET_SECRET_KEY=abcd-ef1234567890f1e2d3c4-b5a6-7890-abcd-ef1234567890
 ```
 
 #### 2.2. Файл `Dockerfile`
