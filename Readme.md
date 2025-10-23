@@ -50,7 +50,7 @@ docker cp my_superset_app:/app/superset_home/superset.db ./backup_sqlite.db
 │-- .env
 │-- Dockerfile
 │-- docker-compose.yml
-│-- requirements-local.txt  (может быть пустым)
+│-- requirements-local.txt  (psycopg2-binary)
 ```
 
 ---
